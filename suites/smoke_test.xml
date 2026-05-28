@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xml>
+    <test_suite>
+        <category>RDKV_RDKSERVICE</category>
+        <description>Quick smoke test for basic RDK service validation</description>
+        <scripts>
+            <script_name>RDKV_CERT_PVS_Functional_Zombie_Processes</script_name>
+        </scripts>
+    </test_suite>
+</xml>
