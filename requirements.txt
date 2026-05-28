@@ -1,0 +1,8 @@
+websocket-client==0.57.0
+selenium==3.141.0
+requests
+pexpect
+pillow
+numpy
+paramiko
+openpyxl
