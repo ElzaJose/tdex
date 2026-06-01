@@ -232,12 +232,12 @@ Make sure you are in the same directory where `tdk_runner_config.py` was created
 
 ```bash
 cd ~/tdk_tests
-tdk run
+sudo tdk run
 ```
 
 ### Interactive mode (default)
 
-Running `tdk run` without arguments launches an interactive menu.
+Running `sudo tdk run` without arguments launches an interactive menu.
 
 **Step 1: Choose between a module or a suite**
 
@@ -345,13 +345,13 @@ tdk report --port 9000
 ### Run a single specific script
 
 ```bash
-tdk run --module rdkv_performance --script RDKV_CERT_PVS_AppManager_TimeTo_Install_App.py
+sudo tdk run --module rdkv_performance --script RDKV_CERT_PVS_AppManager_TimeTo_Install_App.py
 ```
 
 ### Run all scripts in a module (skip interactive selection)
 
 ```bash
-tdk run --module rdkservices --all
+sudo tdk run --module rdkservices --all
 ```
 
 ### Run a predefined test suite
@@ -359,7 +359,7 @@ tdk run --module rdkservices --all
 Suites are curated lists of scripts across modules. To see what suites are available:
 
 ```bash
-tdk run --list-suites
+sudo tdk run --list-suites
 ```
 
 Sample output:
@@ -373,7 +373,7 @@ Available suites:
 Run a suite:
 
 ```bash
-tdk run --suite smoke_test
+sudo tdk run --suite smoke_test
 ```
 
 ### Run multiple specific scripts
