@@ -36,8 +36,6 @@ Install ──► Configure device ──► tdk setup ──► tdk run ──�
 |------|---------|
 | A Linux machine | Ubuntu 20.04 or later recommended |
 | A `tdk.deb` file | https://github.com/ElzaJose/tdk-runner/releases/download/Assets/tdk.deb|
-| Your RDK device's IP address | e.g., `192.168.1.100` |
-| Your device's port | Usually `9998` |
 | A device config file | A device specific `.config` file for your device for certification tests |
 | Module config files | Variable files for the test modules you want to run |
 
