@@ -325,6 +325,8 @@ The report viewer shows:
 - Per-script tabs
 - Search and filter by test status
 - Expandable log output for each test case
+<img width="1358" height="636" alt="image" src="https://github.com/user-attachments/assets/190d6fd9-6625-48b5-8f38-6f85b4e6191b" />
+
 
 ### View a specific report file
 
