@@ -1,8 +1,8 @@
-# TDK Runner — User Guide
+# TDEX — User Guide
 
 ## Table of Contents
 
-1. [What is TDK Runner?](#1-what-is-tdk-runner)
+1. [What is TDEX?](#1-what-is-tdk-runner)
 2. [Before You Begin](#2-before-you-begin)
 3. [Installation](#3-installation)
 4. [Post-Install: Updating Config Files](#4-post-install-updating-config-files)
@@ -16,9 +16,9 @@
 
 ---
 
-## 1. What is TDK Runner?
+## 1. What is TDEX?
 
-TDK Runner is a command-line tool that lets you run automated tests against RDK (Reference Design Kit) devices without needing the full TDK TestManager UI.
+TDEX is a command-line tool that lets you run automated tests against RDK (Reference Design Kit) devices without needing the full TDK TestManager UI.
 
 You install it once, point it at your device, pick the tests you want to run, and get a report.
 
@@ -420,7 +420,7 @@ The number `4521` is a unique run ID assigned to that execution.
 
 ## 10. Uninstalling TDK
 
-To completely remove TDK Runner and all its files:
+To completely remove TDEX and all its files:
 
 ```bash
 sudo apt purge -y tdk
