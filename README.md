@@ -168,6 +168,46 @@ sudo cp PerformanceTestVariables.py    /opt/tdkv_repo/framework/fileStore/
 
 ---
 
+### `rdkv_media` — Additional setup
+
+The `rdkv_media` module uses a built-in media server (started automatically by `tdk run`) that serves test streams and Lightning app bundles directly from the `/opt/tdkv_repo` directory. You must place the required files in the correct locations before running.
+
+#### Step A — Copy test streams
+
+Extract the stream archive and copy the streams to:
+
+```
+/opt/tdkv_repo/streams/
+```
+
+The media server exposes these files at `http://<HOST_IP>:8080/streams/`.
+
+#### Step B — Copy Lightning app build folders
+
+The `TDK_LightningApps_RDK8` directory contains four apps, each with a `build/` subfolder. Copy the `build/` folder of each app into `/opt/tdkv_repo/framework/fileStore/lightning-apps/<appname>/`:
+
+The media server exposes these at `http://<HOST_IP>:8080/rdk-test-tool/fileStore/lightning-apps/`.
+
+#### Step C — Configure `MediaValidationVariables.py`
+
+Open `MediaValidationVariables.py` and update the following variables. Replace `<HOST_IP>` with the IP address of your test machine (the machine running `tdk`):
+
+| Variable | Required value |
+|----------|---------------|
+| `lightning_apps_loc` | `"http://<HOST_IP>:8080/rdk-test-tool/fileStore/lightning-apps/"` |
+| `test_streams_base_path` | `"http://<HOST_IP>:8080/streams/"` |
+
+
+Then copy the file to the framework file store:
+
+```bash
+sudo cp MediaValidationVariables.py /opt/tdkv_repo/framework/fileStore/
+```
+
+> **Note:** The media server starts automatically when you run `tdk run` with the `rdkv_media` module. No manual server setup is required.
+
+---
+
 ## 5. Step 1 — Run Setup
 
 Before running tests, you must run `tdk setup` from the directory where you want your logs and reports to be saved. This creates a small config file in that directory that records your device details.
