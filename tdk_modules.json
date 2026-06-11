@@ -1,10 +1,6 @@
 {
   "modules": [
     {
-      "name": "vendor_test_suite",
-      "config_files": []
-    },
-    {
       "name": "rdkservices",
       "config_files": []
     },
@@ -25,12 +21,28 @@
       "config_files": ["StabilityTestVariables.py"]
     },
     {
+      "name": "firebolt_native_apps_compliance",
+      "config_files": ["MediaValidationVariables.py"]
+    },
+    {
+      "name": "rdkv_appmanagers",
+      "config_files": []
+    },
+    {
+      "name": "rdkv_apparmor",
+      "config_files": []
+    },
+    {
       "name": "RFC",
       "config_files": []
     },
     {
       "name": "WebAudio",
       "config_files": ["WebAudioVariables.py"]
+    },
+    {
+      "name": "vendor_test_suite",
+      "config_files": []
     }
   ]
 }
